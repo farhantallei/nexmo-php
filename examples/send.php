@@ -3,7 +3,7 @@
 require_once '../vendor/autoload.php';
 
 //create client with api key and secret
-$client = new Nexmo\Client(new Nexmo\Client\Credentials\Basic(ac6cc35d, db3143a6e824b274));
+$client = new Nexmo\Client(new Nexmo\Client\Credentials\Basic(Key, Secret_Key));
 
 //send message using simple api params
 $message = $client->message()->send([
